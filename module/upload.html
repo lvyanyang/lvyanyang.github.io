@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件上传模块 | 西交投行业系统开发平台</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="交通行业管理系统快速开发平台">
+    
+    <link rel="preload" href="/assets/css/0.styles.4bef41d3.css" as="style"><link rel="preload" href="/assets/js/app.04e60675.js" as="script"><link rel="preload" href="/assets/js/2.f4a84ba2.js" as="script"><link rel="preload" href="/assets/js/36.17358850.js" as="script"><link rel="prefetch" href="/assets/js/10.439f08cb.js"><link rel="prefetch" href="/assets/js/11.0b68d7ea.js"><link rel="prefetch" href="/assets/js/12.2afdc30d.js"><link rel="prefetch" href="/assets/js/13.8627b3c5.js"><link rel="prefetch" href="/assets/js/14.3c8a22fd.js"><link rel="prefetch" href="/assets/js/15.31002087.js"><link rel="prefetch" href="/assets/js/16.e7f17f0f.js"><link rel="prefetch" href="/assets/js/17.21a63dbe.js"><link rel="prefetch" href="/assets/js/18.cbe931c8.js"><link rel="prefetch" href="/assets/js/19.370cb95a.js"><link rel="prefetch" href="/assets/js/20.968d00ef.js"><link rel="prefetch" href="/assets/js/21.ad6e8319.js"><link rel="prefetch" href="/assets/js/22.d38ee11b.js"><link rel="prefetch" href="/assets/js/23.516b66aa.js"><link rel="prefetch" href="/assets/js/24.9dc3a636.js"><link rel="prefetch" href="/assets/js/25.5ed165be.js"><link rel="prefetch" href="/assets/js/26.5cf1763e.js"><link rel="prefetch" href="/assets/js/27.676c87e1.js"><link rel="prefetch" href="/assets/js/28.70083edf.js"><link rel="prefetch" href="/assets/js/29.01d0a400.js"><link rel="prefetch" href="/assets/js/3.dd0a1f39.js"><link rel="prefetch" href="/assets/js/30.720e7a12.js"><link rel="prefetch" href="/assets/js/31.e990b1be.js"><link rel="prefetch" href="/assets/js/32.c5d01953.js"><link rel="prefetch" href="/assets/js/33.47796fd3.js"><link rel="prefetch" href="/assets/js/34.b0c63ba0.js"><link rel="prefetch" href="/assets/js/35.464d61be.js"><link rel="prefetch" href="/assets/js/37.e61d4b7d.js"><link rel="prefetch" href="/assets/js/38.d78b8e16.js"><link rel="prefetch" href="/assets/js/39.b1eaf92f.js"><link rel="prefetch" href="/assets/js/4.acbabf5c.js"><link rel="prefetch" href="/assets/js/40.f5a3280f.js"><link rel="prefetch" href="/assets/js/41.47211ebc.js"><link rel="prefetch" href="/assets/js/42.5bc9b023.js"><link rel="prefetch" href="/assets/js/43.e9f6f0c8.js"><link rel="prefetch" href="/assets/js/44.7953659b.js"><link rel="prefetch" href="/assets/js/45.1fd40f9f.js"><link rel="prefetch" href="/assets/js/5.6359b06a.js"><link rel="prefetch" href="/assets/js/6.f916a38f.js"><link rel="prefetch" href="/assets/js/7.dc4e0224.js"><link rel="prefetch" href="/assets/js/8.09f9302e.js"><link rel="prefetch" href="/assets/js/9.a7a86e82.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4bef41d3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">西交投行业系统开发平台</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://gitee.com/lvyanyang/xci-framework" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码托管
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://gitee.com/lvyanyang/xci-framework" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码托管
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>核心模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/core/" class="sidebar-link">介绍</a></li><li><a href="/core/start.html" class="sidebar-link">快速开始</a></li><li><a href="/core/xci.html" class="sidebar-link">核心工具类</a></li><li><a href="/core/config.html" class="sidebar-link">核心配置</a></li><li><a href="/core/iapp.html" class="sidebar-link">应用程序接口</a></li><li><a href="/core/iappModule.html" class="sidebar-link">应用模块接口</a></li><li><a href="/core/api.html" class="sidebar-link">接口规范</a></li><li><a href="/core/apiDoc.html" class="sidebar-link">接口文档</a></li><li><a href="/core/bindingUser.html" class="sidebar-link">绑定用户</a></li><li><a href="/core/dataSource.html" class="sidebar-link">配置数据源</a></li><li><a href="/core/excel.html" class="sidebar-link">导入导出</a></li><li><a href="/core/paging.html" class="sidebar-link">分页查询</a></li><li><a href="/core/top.html" class="sidebar-link">Top转换</a></li><li><a href="/core/existx.html" class="sidebar-link">Exist转换</a></li><li><a href="/core/operateLog.html" class="sidebar-link">操作日志</a></li><li><a href="/core/validation.html" class="sidebar-link">数据校验</a></li><li><a href="/core/webPage.html" class="sidebar-link">页面全局变量</a></li><li><a href="/core/apiEncrypt.html" class="sidebar-link">接口加密解密</a></li><li><a href="/core/captcha.html" class="sidebar-link">验证码</a></li><li><a href="/core/asyncTask.html" class="sidebar-link">异步任务</a></li><li><a href="/core/requestJson.html" class="sidebar-link">单个Json参数</a></li><li><a href="/core/deleted.html" class="sidebar-link">逻辑删除</a></li><li><a href="/core/interceptor.html" class="sidebar-link">拦截器</a></li><li><a href="/core/filter.html" class="sidebar-link">过滤器</a></li><li><a href="/core/faq.html" class="sidebar-link">其他</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>权限模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/sys/" class="sidebar-link">权限模块</a></li><li><a href="/sys/config.html" class="sidebar-link">模块配置</a></li><li><a href="/sys/authorize.html" class="sidebar-link">权限认证</a></li><li><a href="/sys/deptScope.html" class="sidebar-link">机构数据权限</a></li><li><a href="/sys/service.html" class="sidebar-link">模块服务</a></li><li><a href="/sys/app.html" class="sidebar-link">权限应用扩展</a></li><li><a href="/sys/param.html" class="sidebar-link">系统参数</a></li><li><a href="/sys/dic.html" class="sidebar-link">系统字典</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>扩展模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/module/upload.html" aria-current="page" class="active sidebar-link">文件上传模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/module/upload.html#功能特性" class="sidebar-link">功能特性</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#使用方法" class="sidebar-link">使用方法</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#配置参数" class="sidebar-link">配置参数</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#接口调用" class="sidebar-link">接口调用</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#token校验" class="sidebar-link">Token校验</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#手动调用" class="sidebar-link">手动调用</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#接口返回值" class="sidebar-link">接口返回值</a></li><li class="sidebar-sub-header"><a href="/module/upload.html#搭建文件服务器" class="sidebar-link">搭建文件服务器</a></li></ul></li><li><a href="/module/dbSchema.html" class="sidebar-link">数据库架构模块</a></li><li><a href="/module/codeGenerate.html" class="sidebar-link">代码生成模块</a></li><li><a href="/module/quartz.html" class="sidebar-link">定时任务模块</a></li><li><a href="/module/wechat.html" class="sidebar-link">微信模块</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文件上传模块"><a href="#文件上传模块" class="header-anchor">#</a> 文件上传模块</h1> <p>基于SpringMVC自主实现的轻量级文件上传、下载以及文件查询服务。</p> <p>本模块支持三种类型的文件上传下载：</p> <ul><li><p>常规文件上传下载：不能指定上传文件的具体文件名，可以指定上传目录，文件名自动生成，通过返回值传给客户端；可以通过Url地址直接访问；通过下载接口获取；</p></li> <li><p>数据文件上传下载：必须指定传文件的具体文件名，文件名由客户端生成；不能通过url直接访问，只能通过下载接口获取；</p></li> <li><p>客户端更新包上传下载：不能指定上传文件的具体文件名称，上传时必须指定密码；可以通过Url地址直接访问；</p></li></ul> <h2 id="功能特性"><a href="#功能特性" class="header-anchor">#</a> 功能特性</h2> <ul><li>文件上传：支持自动命名；支持指定上传的目录；支持数据文件的上传和下载；</li> <li>文件下载：支持按路径下载；支持<code>md5</code>参数，如果md5值相同，文件则不会传输；指出url与磁盘映射配置;</li> <li>文件删除：支持远程删除文件；可通过参数关闭此功能；</li> <li>文件复制：支持远程复制文件；</li> <li>检查文件是否存在</li> <li>查询文件列表</li> <li>查询文件数量</li> <li>查询文件详细信息</li> <li>客户端更新包</li> <li>数据文件上传下载</li></ul> <h2 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h2> <p>项目文件 <code>pom.xml</code> 中添加依赖：</p> <div class="language-xml line-numbers-mode"><pre class="language-xml"><code><span class="token comment">&lt;!--XCI文件上传模块--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>com.github.lvyanyang<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>xci-framework-upload<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>${xci.framework.version}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="配置参数"><a href="#配置参数" class="header-anchor">#</a> 配置参数</h2> <details class="custom-block details"><summary>Spring配置参数</summary> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment"># 是否启用上传，默认启用</span>
+<span class="token attr-name">spring.servlet.multipart.enabled</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+
+<span class="token comment"># 单个文件允许上传的大小，默认1MB</span>
+<span class="token attr-name">spring.servlet.multipart.max-file-size</span><span class="token punctuation">=</span><span class="token attr-value">1MB</span>
+
+<span class="token comment"># 整个请求允许上传的总大小，默认10MB</span>
+<span class="token attr-name">spring.servlet.multipart.max-request-size</span><span class="token punctuation">=</span><span class="token attr-value">10MB</span>
+
+<span class="token comment"># 如果上传文件大小达到了指定大小，将会写入到临时文件中，如果没有达到指定大小，则会在内存中缓存。默认值为0，也就是所有上传的文件都会写入到临时文件中</span>
+<span class="token attr-name">spring.servlet.multipart.file-size-threshold</span><span class="token punctuation">=</span><span class="token attr-value">1MB</span>
+
+<span class="token attr-name">server.tomcat.max-swallow-size</span><span class="token punctuation">=</span><span class="token attr-value">200MB</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></details> <details class="custom-block details"><summary>模块配置参数</summary> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment"># 是否启用文件上传功能</span>
+<span class="token attr-name">xci.upload.enabled</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+    
+<span class="token comment"># 是否启用文件上传token验证，如果启用则需要在请求header集合中添加uploadToken，主要是基于安全考虑</span>
+<span class="token attr-name">xci.upload.enable-token</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+
+<span class="token comment"># 是否启用文件删除接口</span>
+<span class="token attr-name">xci.upload.enable-delete</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+
+<span class="token comment"># 文件磁盘保存目录，需要指定绝对路径，{root}是变量，表示项目的启动路径</span>
+<span class="token attr-name">xci.upload.file-root</span><span class="token punctuation">=</span><span class="token attr-value">/{root}/uploads</span>
+
+<span class="token comment"># 文件http访问根路径，如果为空，则不允许通过http访问</span>
+<span class="token attr-name">xci.upload.web-root</span><span class="token punctuation">=</span><span class="token attr-value">/uploads/</span>
+
+<span class="token comment"># 允许上传的单个文件大小（KB）</span>
+<span class="token attr-name">xci.upload.max-size</span><span class="token punctuation">=</span><span class="token attr-value">204800</span>
+
+<span class="token comment"># 允许上传的文件扩展名（不含点）</span>
+<span class="token attr-name">xci.upload.allow-extensions</span><span class="token punctuation">=</span><span class="token attr-value">gif,jpg,jpeg,png,bmp,zip,rar,doc,docx,xls,xlsx,ppt,pptx,txt,pdf,repx,json,xml</span>
+
+<span class="token comment">#是否只允许上传图片,如果为true则allowExtensions属性会被忽略，只允许上传图片(检测内容必须是图片才能上传)</span>
+<span class="token attr-name">xci.upload.only-allow-image</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div></details> <details class="custom-block details"><summary>数据文件配置参数</summary> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment"># 是否启用数据文件上传功能</span>
+<span class="token attr-name">xci.data.file.enabled</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+    
+<span class="token comment"># 是否启用数据文件上传token验证，如果启用则需要在请求header集合中添加uploadToken，主要是基于安全考虑</span>
+<span class="token attr-name">xci.data.file.enable-token</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+
+<span class="token comment"># 是否启用数据文件删除接口</span>
+<span class="token attr-name">xci.data.file.enable-delete</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+
+<span class="token comment"># 数据文件磁盘保存目录，需要指定绝对路径，{root}是变量，表示项目的启动路径</span>
+<span class="token attr-name">xci.data.file.file-root</span><span class="token punctuation">=</span><span class="token attr-value">/{root}/data</span>
+
+<span class="token comment"># 允许上传的单个文件大小（KB）</span>
+<span class="token attr-name">xci.data.file.max-size</span><span class="token punctuation">=</span><span class="token attr-value">204800</span>
+
+<span class="token comment"># 允许上传的文件扩展名（不含点）</span>
+<span class="token attr-name">xci.data.file.allow-extensions</span><span class="token punctuation">=</span><span class="token attr-value">txt,pdf,repx,json,xml</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div></details> <details class="custom-block details"><summary>客户端更新包配置参数</summary> <div class="language-properties line-numbers-mode"><pre class="language-properties"><code><span class="token comment"># 是否启用WinForm客户端升级服务</span>
+<span class="token attr-name">xci.upgrade.enabled</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+
+<span class="token comment"># 更新包磁盘保存目录，需要指定绝对路径，{root}是变量，表示项目的启动路径</span>
+<span class="token attr-name">xci.upgrade.file-root</span><span class="token punctuation">=</span><span class="token attr-value">/{root}/upgrade</span>
+
+<span class="token comment"># 更新包http访问根路径，如果为空，则不允许通过http访问</span>
+<span class="token attr-name">xci.upgrade.web-root</span><span class="token punctuation">=</span><span class="token attr-value">/upgrade/</span>
+
+<span class="token comment"># 允许上传的单个文件大小（KB）</span>
+<span class="token attr-name">xci.upgrade.max-size</span><span class="token punctuation">=</span><span class="token attr-value">204800</span>
+
+<span class="token comment"># 更新包上传密码</span>
+<span class="token attr-name">xci.upgrade.password</span><span class="token punctuation">=</span><span class="token attr-value">www.xci96716.com</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details> <h2 id="接口调用"><a href="#接口调用" class="header-anchor">#</a> 接口调用</h2> <p>WebApi接口调用需要在请求 <code>Header</code> 集合中添加以下变量：</p> <table><thead><tr><th style="text-align:left;">名称</th> <th style="text-align:left;">值</th> <th style="text-align:left;">说明</th></tr></thead> <tbody><tr><td style="text-align:left;">X-Requested-Type</td> <td style="text-align:left;">APIHttpRequest</td> <td style="text-align:left;">接口请求标识</td></tr> <tr><td style="text-align:left;">uploadToken</td> <td style="text-align:left;">上传Token</td> <td style="text-align:left;">如果开启文件Token验证</td></tr></tbody></table> <h2 id="token校验"><a href="#token校验" class="header-anchor">#</a> Token校验</h2> <p>为了保障接口安全，可以控制是否需要在上传文件时进行文件Token校验。</p> <ol><li>开关</li></ol> <p>在配置文件 <code>application.properties</code> 中通过 <code>xci.upload.enable-token=true</code> 开启或者关闭</p> <ol start="2"><li>规则</li></ol> <p>如果开启文件Token验证，需要客户端调用接口时在请求 <code>Header</code> 中添加变量 <code>uploadToken</code>，变量的值为当前日期按此格式 <code>*yyyy**MM***dd****</code> 进行格式化，然后调用加密函数。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">//java实现</span>
+XCI<span class="token punctuation">.</span><span class="token function">encrypt</span><span class="token punctuation">(</span>XCI<span class="token punctuation">.</span><span class="token function">formatDate</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;*yyyy**MM***dd****&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//c#实现</span>
+<span class="token class-name">EncryptHelper</span><span class="token punctuation">.</span><span class="token class-name">AESEncrypt</span><span class="token punctuation">(</span><span class="token class-name">DateTimeHelper</span><span class="token punctuation">.</span><span class="token class-name">FormatDate</span><span class="token punctuation">(</span><span class="token class-name">DateTime</span><span class="token punctuation">.</span><span class="token class-name">Now</span><span class="token punctuation">,</span> <span class="token string">&quot;*yyyy**MM***dd****&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="手动调用"><a href="#手动调用" class="header-anchor">#</a> 手动调用</h2> <p>如果需要在服务端手动调用上传服务，可以从Spring容器中获取上传服务对象来操作。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/*
+ * 文件上传服务 
+ */</span>
+<span class="token annotation punctuation">@Resource</span> 
+<span class="token keyword">private</span> <span class="token class-name">UploadService</span> uploadService<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><details class="custom-block details"><summary>上传服务常用方法</summary> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Service</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">UploadService</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 上传文件
+     * @param uploadFile     上传文件对象
+     * @param virtualCatalog 文件虚拟目录(选填)
+     * @return 返回上传文件信息
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">UploadFileModel</span><span class="token punctuation">&gt;</span></span> <span class="token function">upload</span><span class="token punctuation">(</span><span class="token class-name">MultipartFile</span> uploadFile<span class="token punctuation">,</span> <span class="token class-name">String</span> virtualCatalog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 下载文件
+     * @param virtualFilePath 文件虚拟路径
+     * @param md5             文件Md5
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">download</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualFilePath<span class="token punctuation">,</span> <span class="token class-name">String</span> md5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 上传数据文件
+     * @param uploadFile      上传文件对象
+     * @param virtualFilePath 虚拟文件路径
+     * @return 返回上传文件信息
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span> <span class="token function">uploadDataFile</span><span class="token punctuation">(</span><span class="token class-name">MultipartFile</span> uploadFile<span class="token punctuation">,</span> <span class="token class-name">String</span> virtualFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 下载数据文件
+     * @param virtualFilePath 虚拟文件路径
+     * @param md5             文件Md5
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">downloadDataFile</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualFilePath<span class="token punctuation">,</span> <span class="token class-name">String</span> md5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 删除文件
+     * @param virtualFilePath 文件虚拟路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span> <span class="token function">delete</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 复制文件
+     * @param srcVirtualFilePath  源文件虚拟路径
+     * @param destVirtualFilePath 目标文件虚拟路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span> <span class="token function">copy</span><span class="token punctuation">(</span><span class="token class-name">String</span> srcVirtualFilePath<span class="token punctuation">,</span> <span class="token class-name">String</span> destVirtualFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 检测文件是否存在
+     * @param virtualFilePath 虚拟文件路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Boolean</span><span class="token punctuation">&gt;</span></span> <span class="token function">exists</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualFilePath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 查询文件列表
+     * @param virtualCatalog 文件虚拟目录
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">FileModel</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">list</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualCatalog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取文件数量
+     * @param virtualCatalog 文件虚拟目录
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Long</span><span class="token punctuation">&gt;</span></span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualCatalog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取文件信息
+     * @param virtualFilePaths 虚拟文件路径字符串,多个路径间用逗号隔开
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">List</span><span class="token punctuation">&lt;</span><span class="token class-name">UploadFileModel</span><span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span></span> <span class="token function">info</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualFilePaths<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/**
+     * 虚拟路径转为磁盘物理路径
+     * @param virtualPath 文件虚拟路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toUploadDiskPath</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualPath<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 虚拟路径转为http请求路径
+     * @param virtualPath   文件虚拟路径
+     * @param isFullSiteUrl 是否返回完整http地址
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toUploadWebUrl</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualPath<span class="token punctuation">,</span> <span class="token class-name">Boolean</span> isFullSiteUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取自动生成的文件虚拟路径
+     * @param uploadFile     上传文件对象
+     * @param virtualCatalog 文件虚拟目录
+     */</span>
+    <span class="token keyword">private</span> <span class="token class-name">BoolResult</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> <span class="token function">getUploadAutoSaveVirtualFilePath</span><span class="token punctuation">(</span><span class="token class-name">MultipartFile</span> uploadFile<span class="token punctuation">,</span> <span class="token class-name">String</span> virtualCatalog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 注册上传文件资源路径映射
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">registryResource</span><span class="token punctuation">(</span><span class="token class-name">ResourceHandlerRegistry</span> registry<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br></div></div></details> <h2 id="接口返回值"><a href="#接口返回值" class="header-anchor">#</a> 接口返回值</h2> <details class="custom-block details"><summary>上传文件</summary> <ul><li>上传文件 - /file/upload</li></ul> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;20121017_110736.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;newName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost:54321/uploads/1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">166556</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;md5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;088dd5b82f9f40aa660174ab8acce1a7&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;contentType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1331553352567361536&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></details> <details class="custom-block details"><summary>删除文件 - /file/delete</summary> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">-1</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;系统配置不允许删除操作&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></details> <details class="custom-block details"><summary>复制文件 - /file/copy</summary> <p><strong>请求</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;srcVirtualFilePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;destVirtualFilePath&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/9999.png&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>结果</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></details> <details class="custom-block details"><summary>查询文件列表 - /file/list</summary> <p><strong>请求</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;virtualCatalog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>结果</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost:54321/uploads/1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">166556</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;md5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;088dd5b82f9f40aa660174ab8acce1a7&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;contentType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div></details> <details class="custom-block details"><summary>查询目录下文件数量(不含子目录) - /file/count</summary> <p><strong>请求</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;virtualCatalog&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>结果</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></details> <details class="custom-block details"><summary>获取文件信息 - /file/info</summary> <p><strong>请求</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+	<span class="token property">&quot;virtualFilePaths&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331550900988284928.png,/1331553352533807104.png&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>结果</strong></p> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost:54321/uploads/1331550900988284928.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">166556</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;md5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;088dd5b82f9f40aa660174ab8acce1a7&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;contentType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;path&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;url&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://localhost:54321/uploads/1331553352533807104.png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">166556</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;md5&quot;</span><span class="token operator">:</span> <span class="token string">&quot;088dd5b82f9f40aa660174ab8acce1a7&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;contentType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;image/png&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;category&quot;</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;success&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div></details> <h2 id="搭建文件服务器"><a href="#搭建文件服务器" class="header-anchor">#</a> 搭建文件服务器</h2> <p>待续...</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2/4/2021, 10:23:58 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/sys/dic.html" class="prev">
+        系统字典
+      </a></span> <span class="next"><a href="/module/dbSchema.html">
+        数据库架构模块
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.04e60675.js" defer></script><script src="/assets/js/2.f4a84ba2.js" defer></script><script src="/assets/js/36.17358850.js" defer></script>
+  </body>
+</html>

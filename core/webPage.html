@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>页面全局变量 | 西交投行业系统开发平台</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="交通行业管理系统快速开发平台">
+    
+    <link rel="preload" href="/assets/css/0.styles.4bef41d3.css" as="style"><link rel="preload" href="/assets/js/app.04e60675.js" as="script"><link rel="preload" href="/assets/js/2.f4a84ba2.js" as="script"><link rel="preload" href="/assets/js/10.439f08cb.js" as="script"><link rel="prefetch" href="/assets/js/11.0b68d7ea.js"><link rel="prefetch" href="/assets/js/12.2afdc30d.js"><link rel="prefetch" href="/assets/js/13.8627b3c5.js"><link rel="prefetch" href="/assets/js/14.3c8a22fd.js"><link rel="prefetch" href="/assets/js/15.31002087.js"><link rel="prefetch" href="/assets/js/16.e7f17f0f.js"><link rel="prefetch" href="/assets/js/17.21a63dbe.js"><link rel="prefetch" href="/assets/js/18.cbe931c8.js"><link rel="prefetch" href="/assets/js/19.370cb95a.js"><link rel="prefetch" href="/assets/js/20.968d00ef.js"><link rel="prefetch" href="/assets/js/21.ad6e8319.js"><link rel="prefetch" href="/assets/js/22.d38ee11b.js"><link rel="prefetch" href="/assets/js/23.516b66aa.js"><link rel="prefetch" href="/assets/js/24.9dc3a636.js"><link rel="prefetch" href="/assets/js/25.5ed165be.js"><link rel="prefetch" href="/assets/js/26.5cf1763e.js"><link rel="prefetch" href="/assets/js/27.676c87e1.js"><link rel="prefetch" href="/assets/js/28.70083edf.js"><link rel="prefetch" href="/assets/js/29.01d0a400.js"><link rel="prefetch" href="/assets/js/3.dd0a1f39.js"><link rel="prefetch" href="/assets/js/30.720e7a12.js"><link rel="prefetch" href="/assets/js/31.e990b1be.js"><link rel="prefetch" href="/assets/js/32.c5d01953.js"><link rel="prefetch" href="/assets/js/33.47796fd3.js"><link rel="prefetch" href="/assets/js/34.b0c63ba0.js"><link rel="prefetch" href="/assets/js/35.464d61be.js"><link rel="prefetch" href="/assets/js/36.17358850.js"><link rel="prefetch" href="/assets/js/37.e61d4b7d.js"><link rel="prefetch" href="/assets/js/38.d78b8e16.js"><link rel="prefetch" href="/assets/js/39.b1eaf92f.js"><link rel="prefetch" href="/assets/js/4.acbabf5c.js"><link rel="prefetch" href="/assets/js/40.f5a3280f.js"><link rel="prefetch" href="/assets/js/41.47211ebc.js"><link rel="prefetch" href="/assets/js/42.5bc9b023.js"><link rel="prefetch" href="/assets/js/43.e9f6f0c8.js"><link rel="prefetch" href="/assets/js/44.7953659b.js"><link rel="prefetch" href="/assets/js/45.1fd40f9f.js"><link rel="prefetch" href="/assets/js/5.6359b06a.js"><link rel="prefetch" href="/assets/js/6.f916a38f.js"><link rel="prefetch" href="/assets/js/7.dc4e0224.js"><link rel="prefetch" href="/assets/js/8.09f9302e.js"><link rel="prefetch" href="/assets/js/9.a7a86e82.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4bef41d3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">西交投行业系统开发平台</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://gitee.com/lvyanyang/xci-framework" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码托管
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://gitee.com/lvyanyang/xci-framework" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  代码托管
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>核心模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/core/" aria-current="page" class="sidebar-link">介绍</a></li><li><a href="/core/start.html" class="sidebar-link">快速开始</a></li><li><a href="/core/xci.html" class="sidebar-link">核心工具类</a></li><li><a href="/core/config.html" class="sidebar-link">核心配置</a></li><li><a href="/core/iapp.html" class="sidebar-link">应用程序接口</a></li><li><a href="/core/iappModule.html" class="sidebar-link">应用模块接口</a></li><li><a href="/core/api.html" class="sidebar-link">接口规范</a></li><li><a href="/core/apiDoc.html" class="sidebar-link">接口文档</a></li><li><a href="/core/bindingUser.html" class="sidebar-link">绑定用户</a></li><li><a href="/core/dataSource.html" class="sidebar-link">配置数据源</a></li><li><a href="/core/excel.html" class="sidebar-link">导入导出</a></li><li><a href="/core/paging.html" class="sidebar-link">分页查询</a></li><li><a href="/core/top.html" class="sidebar-link">Top转换</a></li><li><a href="/core/existx.html" class="sidebar-link">Exist转换</a></li><li><a href="/core/operateLog.html" class="sidebar-link">操作日志</a></li><li><a href="/core/validation.html" class="sidebar-link">数据校验</a></li><li><a href="/core/webPage.html" aria-current="page" class="active sidebar-link">页面全局变量</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/core/webPage.html#freemarker全局辅助文件" class="sidebar-link">FreeMarker全局辅助文件</a></li><li class="sidebar-sub-header"><a href="/core/webPage.html#使用方法" class="sidebar-link">使用方法</a></li><li class="sidebar-sub-header"><a href="/core/webPage.html#全局注入自定义对象" class="sidebar-link">全局注入自定义对象</a></li><li class="sidebar-sub-header"><a href="/core/webPage.html#webpage" class="sidebar-link">WebPage</a></li><li class="sidebar-sub-header"><a href="/core/webPage.html#syswebpage" class="sidebar-link">SysWebPage</a></li></ul></li><li><a href="/core/apiEncrypt.html" class="sidebar-link">接口加密解密</a></li><li><a href="/core/captcha.html" class="sidebar-link">验证码</a></li><li><a href="/core/asyncTask.html" class="sidebar-link">异步任务</a></li><li><a href="/core/requestJson.html" class="sidebar-link">单个Json参数</a></li><li><a href="/core/deleted.html" class="sidebar-link">逻辑删除</a></li><li><a href="/core/interceptor.html" class="sidebar-link">拦截器</a></li><li><a href="/core/filter.html" class="sidebar-link">过滤器</a></li><li><a href="/core/faq.html" class="sidebar-link">其他</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>权限模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/sys/" class="sidebar-link">权限模块</a></li><li><a href="/sys/config.html" class="sidebar-link">模块配置</a></li><li><a href="/sys/authorize.html" class="sidebar-link">权限认证</a></li><li><a href="/sys/deptScope.html" class="sidebar-link">机构数据权限</a></li><li><a href="/sys/service.html" class="sidebar-link">模块服务</a></li><li><a href="/sys/app.html" class="sidebar-link">权限应用扩展</a></li><li><a href="/sys/param.html" class="sidebar-link">系统参数</a></li><li><a href="/sys/dic.html" class="sidebar-link">系统字典</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>扩展模块</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/module/upload.html" class="sidebar-link">文件上传模块</a></li><li><a href="/module/dbSchema.html" class="sidebar-link">数据库架构模块</a></li><li><a href="/module/codeGenerate.html" class="sidebar-link">代码生成模块</a></li><li><a href="/module/quartz.html" class="sidebar-link">定时任务模块</a></li><li><a href="/module/wechat.html" class="sidebar-link">微信模块</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="页面全局变量"><a href="#页面全局变量" class="header-anchor">#</a> 页面全局变量</h1> <p>系统在所有<code>Controller</code>对象的方法中全局注入<a href="#webpage">WebPage</a>类的实例，在所有<code>ftl</code>页面中统一使用<code>web</code>来调用。</p> <p>加载 <code>xci-framework-sys</code> 模块后，还会全局注入<a href="#syswebpage">SysWebPage</a>对象，在所有<code>ftl</code>页面中统一使用<code>sysWeb</code>来调用。</p> <h2 id="freemarker全局辅助文件"><a href="#freemarker全局辅助文件" class="header-anchor">#</a> FreeMarker全局辅助文件</h2> <p>新建辅助文件路径：<code>resources\freemarker_implicit.ftl</code>，此文件的作用是给Idea开发工具提供类型说明，实现编辑器的代码提示。</p> <div class="language-ftl line-numbers-mode"><pre class="language-ftl"><code>[#ftl]
+[#-- @implicitly included --]
+[#-- @ftlroot &quot;../resources/templates/&quot; --]
+[#-- @ftlroot &quot;../resources/static/&quot; --]
+[#-- @ftlvariable name=&quot;_create_&quot; type=&quot;java.lang.String&quot; --]
+[#-- @ftlvariable name=&quot;request&quot; type=&quot;org.springframework.web.servlet.support.RequestContext&quot; --]
+[#-- @ftlvariable name=&quot;web&quot; type=&quot;com.github.lvyanyang.component.WebPage&quot; --]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="使用方法"><a href="#使用方法" class="header-anchor">#</a> 使用方法</h2> <div class="language-ftl line-numbers-mode"><pre class="language-ftl"><code>定义一个变量defOperateEndDateTime，值=当前时间
+<span class="token ftl language-ftl"><span class="token ftl-directive"><span class="token punctuation">&lt;</span><span class="token directive keyword">#assign</span><span class="token content ftl"> defOperateEndDateTime<span class="token operator">=</span>web<span class="token punctuation">.</span><span class="token function">formatDate</span><span class="token punctuation">(</span>web<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span></span><span class="token punctuation">/&gt;</span></span></span>
+
+输出客户端ip
+<span class="token ftl language-ftl"><span class="token ftl-interpolation"><span class="token punctuation">${</span><span class="token content ftl">web<span class="token punctuation">.</span><span class="token function">clientIP</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">}</span></span></span>
+
+生成一个cdn链接的css资源
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token ftl language-ftl"><span class="token ftl-interpolation"><span class="token punctuation">${</span><span class="token content ftl">web<span class="token punctuation">.</span><span class="token function">cdn</span><span class="token punctuation">(</span><span class="token string">'/jx.css'</span><span class="token punctuation">)</span></span><span class="token punctuation">}</span></span></span><span class="token punctuation">&quot;</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+
+判断是否为空，控制输出
+<span class="token ftl language-ftl"><span class="token ftl-directive"><span class="token punctuation">&lt;</span><span class="token directive keyword">#if</span><span class="token content ftl"> web<span class="token punctuation">.</span><span class="token function">isNotBlank</span><span class="token punctuation">(</span>entity<span class="token punctuation">.</span>afterData<span class="token punctuation">)</span></span><span class="token punctuation">&gt;</span></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>操作后数据<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>pre</span><span class="token punctuation">&gt;</span></span><span class="token ftl language-ftl"><span class="token ftl-interpolation"><span class="token punctuation">${</span><span class="token content ftl">entity<span class="token punctuation">.</span>afterData</span><span class="token punctuation">}</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>pre</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+<span class="token ftl language-ftl"><span class="token ftl-directive"><span class="token punctuation">&lt;/</span><span class="token directive keyword">#if</span><span class="token punctuation">&gt;</span></span></span>
+
+时间格式化输出
+<span class="token ftl language-ftl"><span class="token ftl-interpolation"><span class="token punctuation">${</span><span class="token content ftl">web<span class="token punctuation">.</span><span class="token function">formatDateTime</span><span class="token punctuation">(</span>entity<span class="token punctuation">.</span>operateDateTime<span class="token punctuation">)</span></span><span class="token punctuation">}</span></span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="全局注入自定义对象"><a href="#全局注入自定义对象" class="header-anchor">#</a> 全局注入自定义对象</h2> <ol><li>定义<code>@Component</code>类</li></ol> <details class="custom-block details"><summary>查看代码</summary> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SysWebPage</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Resource</span> <span class="token keyword">private</span> <span class="token class-name">SysUserService</span> userService<span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 用户权限编码鉴权
+     * @param code 权限编码
+     * @return 拥有返回true
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">auth</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> userService<span class="token punctuation">.</span><span class="token function">authorize</span><span class="token punctuation">(</span>userService<span class="token punctuation">.</span><span class="token function">getCurrentUserId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * 获取当前登录用户
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">SysUser</span> <span class="token function">currentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> userService<span class="token punctuation">.</span><span class="token function">getCurrentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div></details> <ol start="2"><li>定义<code>ControllerAdvice</code>类</li></ol> <details class="custom-block details"><summary>查看代码</summary> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+ * 全局注入变量到Web页面中
+ */</span>
+<span class="token annotation punctuation">@ControllerAdvice</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SysWebControllerAdvice</span> <span class="token punctuation">{</span>
+    <span class="token comment">//上面定义的组件类</span>
+    <span class="token annotation punctuation">@Resource</span> <span class="token keyword">private</span> <span class="token class-name">SysWebPage</span> sysWebPage<span class="token punctuation">;</span>
+
+    <span class="token comment">//注解参数就是页面引用的名称</span>
+    <span class="token annotation punctuation">@ModelAttribute</span><span class="token punctuation">(</span><span class="token string">&quot;sysWeb&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token class-name">SysWebPage</span> <span class="token function">initSysWebPage</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>sysWebPage<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></details> <ol start="3"><li>辅助文件<code>freemarker_implicit.ftl</code>添加类型声明</li></ol> <p>添加后Idea就可以实现代码提示了</p> <details class="custom-block details"><summary>查看代码</summary> <div class="language-ftl line-numbers-mode"><pre class="language-ftl"><code>[#-- @ftlvariable name=&quot;sysWeb&quot; type=&quot;com.github.lvyanyang.sys.ui.component.SysWebPage&quot; --]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/assets/img/e5eb0424.12877014.png" alt=""></p></details> <h2 id="webpage"><a href="#webpage" class="header-anchor">#</a> WebPage</h2> <details class="custom-block details"><summary>查看代码</summary> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">WebPage</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 判断当前页面是否新建记录
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isCreate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取当前日期时间对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">Date</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取当前日期时间对象
+     * @param offsetDay 偏移天数，正数为向后偏移，负数为向前偏移
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">Date</span> <span class="token function">now</span><span class="token punctuation">(</span><span class="token keyword">int</span> offsetDay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取指定日期偏移指定时间后的时间，生成的偏移日期不影响原日期
+     * @param date      基准日期
+     * @param offsetDay 偏移天数，正数为向后偏移，负数为向前偏移
+     * @return 偏移后的日期
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">DateTime</span> <span class="token function">dateOffset</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">,</span> <span class="token keyword">int</span> offsetDay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 格式化日期(默认格式yyyy-MM-dd)
+     * @param date 指定的时间
+     * @return 返回日期格式化后的字符串
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">formatDate</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 格式化日期字符串(默认格式 yyyy-MM-dd HH:mm)
+     * @param date 指定的时间
+     * @return 返回日期格式化后的字符串
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">formatDateHasMinute</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 格式化日期(默认格式 yyyy-MM-dd HH:mm:ss)
+     * @param date 指定的时间
+     * @return 返回日期格式化后的字符串
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">formatDateTime</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取格式化的时间字符串(默认格式 HH:mm:ss)
+     * @param date 指定的时间
+     * @return 返回日期格式化后的字符串
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">formatTime</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 格式化日期
+     * @param date   指定的时间
+     * @param format 格式字符串
+     * @return 返回日期格式化后的字符串
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">formatDate</span><span class="token punctuation">(</span><span class="token class-name">Date</span> date<span class="token punctuation">,</span> <span class="token class-name">String</span> format<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 以 conjunction 为分隔符将多个对象连接为字符串
+     * @param conjunction 分隔符
+     * @param objs        数组
+     * @return 连接后的字符串
+     * @see ArrayUtil#join(Object, CharSequence)
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">join</span><span class="token punctuation">(</span><span class="token class-name">CharSequence</span> conjunction<span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> objs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 切分字符串
+     * @param str       被切分的字符串
+     * @param separator 分隔符字符
+     * @return 切分后的数组
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token function">splitToArray</span><span class="token punctuation">(</span><span class="token class-name">CharSequence</span> str<span class="token punctuation">,</span> <span class="token keyword">char</span> separator<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 判读字符串是否包含另一个子串
+     * @param source 目标
+     * @param sub    子串
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">contains</span><span class="token punctuation">(</span><span class="token class-name">String</span> source<span class="token punctuation">,</span> <span class="token class-name">String</span> sub<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 字符串是否为空白 空白的定义如下： &lt;br&gt;
+     * 1、为null &lt;br&gt;
+     * 2、为不可见字符（如空格）&lt;br&gt;
+     * 3、&quot;&quot;&lt;br&gt;
+     * @param str 被检测的字符串
+     * @return 是否为空
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isBlank</span><span class="token punctuation">(</span><span class="token class-name">CharSequence</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 字符串是否为非空白 空白的定义如下： &lt;br&gt;
+     * 1、不为null &lt;br&gt;
+     * 2、不为不可见字符（如空格）&lt;br&gt;
+     * 3、不为&quot;&quot;&lt;br&gt;
+     * @param str 被检测的字符串
+     * @return 是否为非空
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isNotBlank</span><span class="token punctuation">(</span><span class="token class-name">CharSequence</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 判断对象是否为null
+     * @param obj 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isNull</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 判断对象是否不为null
+     * @param obj 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isNotNull</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取Web项目下的web root路径
+     * @return web root路径
+     * @since 4.0.13
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">File</span> <span class="token function">webRoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取站点完整Url信息
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">siteFullUrl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取站点完整Url信息
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">siteFullUrl</span><span class="token punctuation">(</span><span class="token class-name">String</span> virtualUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获得文件的扩展名，扩展名不带“.”
+     * @param fileName 文件名
+     * @return 扩展名
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">extName</span><span class="token punctuation">(</span><span class="token class-name">String</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 返回主文件名
+     * @param fileName 完整文件名
+     * @return 主文件名
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">mainName</span><span class="token punctuation">(</span><span class="token class-name">String</span> fileName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * json序列化
+     * @param data 待序列化的对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">toJsonString</span><span class="token punctuation">(</span><span class="token class-name">Object</span> data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取客户端IP
+     * @return IP地址
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">clientIP</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取 request Attribute参数
+     * @param name 属性名称
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">requestAttribute</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取 request Parameter参数
+     * @param name 参数名称
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">requestParameter</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取请求上下文
+     * @return 返回请求上下文
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">contextPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取请求上下文绝对路径,会把请求上下文路径(contextPath)拼接在路径之前
+     * @param path 路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">url</span><span class="token punctuation">(</span><span class="token class-name">String</span> path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成cdn Url
+     * @param url 资源路径
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">cdn</span><span class="token punctuation">(</span><span class="token class-name">String</span> url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取cdn服务器
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">cdnRoot</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试对象，分别返回为true和为false的值
+     * 如果是整数类型，1返回true
+     * 如果是布尔类型直接判断
+     * @param test 测试对象
+     * @param trueOut true返回值
+     * @param falseOut false返回值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">iif</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">,</span> <span class="token class-name">String</span> trueOut<span class="token punctuation">,</span> <span class="token class-name">String</span> falseOut<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成span标签label类，成功加label-success类，失败加label-danger类
+     * @param test 测试条件
+     * @param trueLable true文本
+     * @param falseLable false文本
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">boolLabel</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">,</span> <span class="token class-name">String</span> trueLable<span class="token punctuation">,</span> <span class="token class-name">String</span> falseLable<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成span标签label类，成功加label-success类，失败加label-danger类
+     * @param test 测试条件
+     * @param lable true和false文本相同
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">boolLabel</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">,</span> <span class="token class-name">String</span> lable<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成span标签label类，成功加label-success类，失败加label-danger类
+     * trueLable=是
+     * falseLable=否
+     * @param test 测试条件
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">yesnoLabel</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成span标签label类，成功加label-success类，失败加label-danger类
+     * trueLable=启用
+     * falseLable=禁用
+     * @param test 测试条件
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">statusLabel</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试条件，true返回 readonly，否则返回空字符串
+     * @param test 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">isReadonly</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试条件，true返回 selected，否则返回空字符串
+     * @param test 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">isSelected</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试条件，true返回 checked，否则返回空字符串
+     * @param test 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">isChecked</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试条件，true返回 disabled，否则返回空字符串
+     * @param test 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">isDisabled</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 测试条件，true返回 class=&quot;active&quot;，否则返回空字符串
+     * @param test 测试对象
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">isActiveClass</span><span class="token punctuation">(</span><span class="token class-name">Object</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成状态下拉option
+     * 括空标签=全部状态
+     * 启用标签=启用
+     * 停用标签=禁用
+     * 选中值=&quot;&quot;
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">statusSelectOptions</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成状态下拉option
+     * 括空标签=全部状态
+     * 启用标签=启用
+     * 停用标签=禁用
+     * @param selectedValue 选中值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">statusSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">String</span> selectedValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 生成状态下拉option，包括空标签、启用标签、停用标签
+     * @param emptyLable 空标签
+     * @param enableLable 启用标签
+     * @param disableLable 停用标签
+     * @param selectedValue 选中值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">statusSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">String</span> emptyLable<span class="token punctuation">,</span> <span class="token class-name">String</span> enableLable<span class="token punctuation">,</span> <span class="token class-name">String</span> disableLable<span class="token punctuation">,</span> <span class="token class-name">String</span> selectedValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据集合对象生成option选型列表
+     * isMultiple=false
+     * nameFieldName=name
+     * valueFieldName=id
+     * spellFieldName=spell
+     * @param list 数据集合
+     * @param selectedValue 选中值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">selectOptions</span><span class="token punctuation">(</span><span class="token class-name">List</span> list<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据集合对象生成option选型列表
+     * nameFieldName=name
+     * valueFieldName=id
+     * spellFieldName=spell
+     * @param list 数据集合
+     * @param selectedValue 选中值
+     * @param isMultiple 是否允许多选
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">selectOptions</span><span class="token punctuation">(</span><span class="token class-name">List</span> list<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isMultiple<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据集合对象生成option选型列表
+     * @param list 数据集合
+     * @param selectedValue 选中值
+     * @param isMultiple 是否允许多选
+     * @param nameFieldName 显示字段名，不能为空
+     * @param valueFieldName 值字段名，不能为空
+     * @param spellFieldName 简拼字段名，可为空
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">selectOptions</span><span class="token punctuation">(</span><span class="token class-name">List</span> list<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isMultiple<span class="token punctuation">,</span><span class="token class-name">String</span> nameFieldName<span class="token punctuation">,</span> <span class="token class-name">String</span> valueFieldName<span class="token punctuation">,</span> <span class="token class-name">String</span> spellFieldName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment">/**
+     * 根据字典集合生成option选型列表
+     * @param list 字典列表对象
+     * @param selectedValue 选中值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">dicSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DicItem</span><span class="token punctuation">&gt;</span></span> list<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据字典集合生成option选型列表
+     * @param list 字典列表对象
+     * @param selectedValue 选中值
+     * @param isMultiple 是否允许多选
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">dicSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DicItem</span><span class="token punctuation">&gt;</span></span> list<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isMultiple<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br></div></div></details> <h2 id="syswebpage"><a href="#syswebpage" class="header-anchor">#</a> SysWebPage</h2> <details class="custom-block details"><summary>查看代码</summary> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token annotation punctuation">@Component</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SysWebPage</span> <span class="token keyword">extends</span> <span class="token class-name">WebPage</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * 用户权限编码鉴权
+     * @param code 权限编码
+     * @return 拥有返回true
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">auth</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取当前登录用户
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">SysUser</span> <span class="token function">currentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据参数编码获取参数值
+     * @param code         参数编码
+     * @param defaultValue 找不到参数时返回的默认值
+     * @return 返回参数编码对应的参数值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getParam</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">String</span> defaultValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 获取数据字典集合
+     * @param code 字典类型编码
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">DicItem</span><span class="token punctuation">&gt;</span></span> <span class="token function">getDic</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据字典集合生成option选项列表
+     * @param code          字典编码
+     * @param selectedValue 选中值
+     * @param isMultiple    是否允许多选
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">dicSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">,</span> <span class="token keyword">boolean</span> isMultiple<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据字典集合生成option选项列表
+     * isMultiple=false
+     * @param code          字典编码
+     * @param selectedValue 选中值
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">dicSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">,</span> <span class="token class-name">Object</span> selectedValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">/**
+     * 根据字典集合生成option选项列表
+     * selectedValue=null
+     * isMultiple=false
+     * @param code 字典编码
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">dicSelectOptions</span><span class="token punctuation">(</span><span class="token class-name">String</span> code<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div></details></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">12/4/2020, 7:35:51 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/core/validation.html" class="prev">
+        数据校验
+      </a></span> <span class="next"><a href="/core/apiEncrypt.html">
+        接口加密解密
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.04e60675.js" defer></script><script src="/assets/js/2.f4a84ba2.js" defer></script><script src="/assets/js/10.439f08cb.js" defer></script>
+  </body>
+</html>
